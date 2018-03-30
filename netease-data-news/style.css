@@ -1,0 +1,80 @@
+body {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.graph {
+  margin-top: 20px;
+}
+.death-label,
+.accident-label {
+  font-size: 10px;
+  text-anchor: middle;
+}
+.death-label {
+  fill: #e78221;
+}
+.accident-label {
+  fill: #139eae;
+}
+.death-tick {
+  stroke: #fff;
+  opacity: 0.5;
+}
+.province-label {
+  -webkit-writing-mode: tb;
+      -ms-writing-mode: tb;
+          writing-mode: tb;
+  font-size: 14px;
+  fill: #829fa1;
+}
+.accident-area,
+.death-line,
+.death-ticks,
+.death-labels,
+.accident-labels,
+.province {
+  -webkit-transform: rotateX(0) rotateY(0) translate3d(0px, 0px, 0px) translateZ(0);
+          transform: rotateX(0) rotateY(0) translate3d(0px, 0px, 0px) translateZ(0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* reveal style */
+.accident-area.reveal {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(58deg) rotateY(0) translate3d(0px, 0px, 0px) translateZ(-160px);
+          transform: rotateX(58deg) rotateY(0) translate3d(0px, 0px, 0px) translateZ(-160px);
+}
+.death-line.reveal {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(58deg) rotateY(0) translate3d(0px, 0px, 0px) translateZ(-100px);
+          transform: rotateX(58deg) rotateY(0) translate3d(0px, 0px, 0px) translateZ(-100px);
+}
+.death-ticks.reveal {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(58deg) rotateY(0) translate3d(0px, 0px, 0px) translateZ(-50px);
+          transform: rotateX(58deg) rotateY(0) translate3d(0px, 0px, 0px) translateZ(-50px);
+}
+.death-labels.reveal {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(58deg) rotateY(0) translate3d(0px, 0px, 0px) translateZ(0px);
+          transform: rotateX(58deg) rotateY(0) translate3d(0px, 0px, 0px) translateZ(0px);
+}
+.accident-labels.reveal {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(58deg) rotateY(0) translate3d(0px, 0px, 0px) translateZ(150px);
+          transform: rotateX(58deg) rotateY(0) translate3d(0px, 0px, 0px) translateZ(150px);
+}
+.province.reveal {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(58deg) rotateY(0) translate3d(0px, 0px, 0px) translateZ(200px);
+          transform: rotateX(58deg) rotateY(0) translate3d(0px, 0px, 0px) translateZ(200px);
+}
+
